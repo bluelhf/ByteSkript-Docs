@@ -77,11 +77,15 @@ These are called with similar syntax, but we use the target object rather than i
 
 This is the same syntax that is used for calling member functions from a [custom type](../language-syntax/members/types.md#type-structure).
 
+{% hint style="warning" %}
+Note that this syntax is **different** from the one used for calling static methods. This is to avoid confusion with expressions that could conceivably be a path to a class, like `script` .
+{% endhint %}
+
 ```clike
-run setName("Bob") from {person}
-run println("hello!") from {output}
-run run() from {runnable}
-set {var} to get() from {supplier}
+run setName("Bob") of {person}
+run println("hello!") of {output}
+run run() of {runnable}
+set {var} to get() of {supplier}
 ```
 
 ### Creating and Using Classes
@@ -123,7 +127,7 @@ function test:
         assert {getter} is a Getter // it's our custom type
         assert {getter} is a java/util/function/Supplier
         // it's also that Java type
-        print get() from {getter} // runs the get() function
+        print get() of {getter} // runs the get() function
 ```
 
 ### Overriding Java Methods

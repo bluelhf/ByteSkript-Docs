@@ -41,7 +41,7 @@
 ## Tutorials
 
 * [Getting Started](tutorials/getting-started/README.md)
-  * [🗺 Language Tour](tutorials/getting-started/language-tour.md)
+  * [🗺️ Language Tour](tutorials/getting-started/language-tour.md)
   * [Converting to ByteSkript](tutorials/getting-started/converting-to-byteskript.md)
 * [Creating a Library](tutorials/creating-a-library/README.md)
   * [Creating an Expression](tutorials/creating-a-library/creating-an-expression.md)
